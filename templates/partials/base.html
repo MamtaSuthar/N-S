@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    {% include "partials/header.html" %}
+
+<body>
+
+    <!-- Topbar Start -->
+    {% include "partials/topbar.html" %}
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    {% include "partials/navbar.html" %}
+    <!-- Navbar End -->
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-- Footer Start -->
+    {% include "partials/footer-text.html" %}
+    <!-- Footer End -->
+
+    {% include "partials/footer.html" %}
+
+</body>
+
+</html>
